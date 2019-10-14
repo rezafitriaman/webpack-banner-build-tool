@@ -1,3 +1,3 @@
-let surename: string = 'reza';
+let surename: string = 'werwer';
 
 console.log(surename);

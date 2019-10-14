@@ -20,20 +20,22 @@
     "clean-webpack-plugin": "^3.0.0",
     "webpack-manifest-plugin": "^2.2.0",
     "webpack-dev-server": "^3.8.2",
-    "webpack-dev-middleware" : "^3.7.2",
+    "webpack-dev-middleware": "^3.7.2",
     "express": "^4.17.1",
     "typescript": "^3.6.4",
-    "ts-loader":"^6.2.0",
+    "ts-loader": "^6.2.0",
     "@types/lodash": "^4.14.144",
     "@types/node": "^12.7.12"
-
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "node": "webpack & node ./dist/app/app.bundle.js",
     "watch": "webpack --watch",
     "build": "webpack",
     "server": "node server.js",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "app": "webpack --config webpack.app.js",
+    "banner": "webpack --config webpack.banner.js"
   },
   "repository": {
     "type": "git",
